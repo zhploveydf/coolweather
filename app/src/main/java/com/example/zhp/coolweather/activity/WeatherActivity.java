@@ -11,11 +11,16 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.zhp.coolweather.R;
+import com.example.zhp.coolweather.service.AutoUpdateService;
 import com.example.zhp.coolweather.util.HttpCallbackListener;
 import com.example.zhp.coolweather.util.HttpUtil;
 import com.example.zhp.coolweather.util.Utility;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by zhp on 2014/12/13 0013.
@@ -75,18 +80,18 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
 
 	@Override
 	public void onClick(View view) {
-		switch (view.getId()){
+		switch (view.getId()) {
 			case R.id.switch_city:
-				Intent intent = new Intent(this,ChooseAreaActivity.class);
-				intent.putExtra("from_weather_activity",true);
+				Intent intent = new Intent(this, ChooseAreaActivity.class);
+				intent.putExtra("from_weather_activity", true);
 				startActivity(intent);
 				finish();
 				break;
 			case R.id.refresh_weather:
 				publishText.setText("同步中...");
 				SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-				String weatherCode = prefs.getString("weather_code","");
-				if(!TextUtils.isEmpty(weatherCode)){
+				String weatherCode = prefs.getString("weather_code", "");
+				if (!TextUtils.isEmpty(weatherCode)) {
 					queryWeatherInfo(weatherCode);
 				}
 				break;
@@ -115,6 +120,12 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
 		queryFromServer(address, "weatherCode");
 	}
 
+	/**
+	 * 根据传入的地址和类型去向服务器查询天气代号或者天气信息。
+	 *
+	 * @param address
+	 * @param type
+	 */
 	private void queryFromServer(final String address, final String type) {
 
 		HttpUtil.sendHttpRequest(address, new HttpCallbackListener() {
@@ -129,6 +140,7 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
 						}
 					}
 				} else if ("weatherCode".equals(type)) {
+					//处理服务器返回的天气信息。
 					Utility.handleWeatherResponse(WeatherActivity.this, response);
 					runOnUiThread(new Runnable() {
 						@Override
@@ -151,6 +163,9 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
 		});
 	}
 
+	/**
+	 * 从SharedPreferences文件中读取存储的天气信息，并且显示到界面上。
+	 */
 	private void showWeather() {
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		cityNameText.setText(prefs.getString("city_name", ""));
@@ -161,7 +176,32 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
 		currentDateText.setText(prefs.getString("current_date", ""));
 		weatherInfoLayout.setVisibility(View.VISIBLE);
 		cityNameText.setVisibility(View.VISIBLE);
+		Intent intent = new Intent(this, AutoUpdateService.class);
+		startService(intent);
+	}
+	
+	private static boolean isExit = false;
+
+	@Override
+	public void onBackPressed() {
+		finishBy2Click();
 	}
 
-
+	private void finishBy2Click(){
+		Timer finishTime = null;
+		if(!isExit){
+			isExit = true;
+			Toast.makeText(WeatherActivity.this,"再按一次退出程序",Toast.LENGTH_SHORT).show();
+			finishTime = new Timer();
+			finishTime.schedule(new TimerTask() {
+				@Override
+				public void run() {
+					isExit = false;
+				}
+			},2000);
+		}else{
+			finish();
+			System.exit(0);
+		}
+	}
 }
