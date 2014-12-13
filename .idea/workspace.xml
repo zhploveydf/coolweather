@@ -42,8 +42,8 @@
       <file leaf-file-name="weather_layout.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/weather_layout.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="36.142857" vertical-offset="1518" max-vertical-offset="2369">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state vertical-scroll-proportion="-32.857143" vertical-offset="0" max-vertical-offset="2714">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -52,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utility.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Utility.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/util/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.531348" vertical-offset="1018" max-vertical-offset="3312">
-              <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1018" max-vertical-offset="3312">
+              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,17 +64,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WeatherActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/activity/WeatherActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2398" max-vertical-offset="3174">
-              <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+            <state vertical-scroll-proportion="-2.30721" vertical-offset="2944" max-vertical-offset="3979">
+              <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2920#3015#0" expanded="true" />
-                <element signature="e#3007#3008#0" expanded="true" />
-                <element signature="e#3099#3203#0" expanded="true" />
-                <element signature="e#3196#3197#0" expanded="true" />
+                <element signature="e#3874#3969#0" expanded="true" />
+                <element signature="e#3961#3962#0" expanded="true" />
+                <element signature="e#4053#4157#0" expanded="true" />
+                <element signature="e#4150#4151#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,8 +83,8 @@
       <file leaf-file-name="ChooseAreaActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/activity/ChooseAreaActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="5750">
-              <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2973" max-vertical-offset="5911">
+              <caret line="227" column="54" selection-start-line="227" selection-start-column="54" selection-end-line="227" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1437#1445#0" expanded="true" />
@@ -1051,11 +1051,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/util/HttpUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/choose_area.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/db/CoolWeatherDB.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/weather_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/util/Utility.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/activity/WeatherActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/activity/ChooseAreaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/weather_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/activity/ChooseAreaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/activity/WeatherActivity.java" />
       </list>
     </option>
   </component>
@@ -1305,6 +1305,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolWeather" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoolWeather" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1505,6 +1535,11 @@
     <property name="DEBUGGABLE_PROCESS" value="com.example.zhp.coolweather" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\AndroidStudioWorkSpace\CoolWeather\app\src\main\res\drawable" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1905,17 +1940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/weather_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="36.142857" vertical-offset="1518" max-vertical-offset="2369">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="644">
@@ -1924,10 +1948,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/util/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1018" max-vertical-offset="3312">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/weather_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.857143" vertical-offset="0" max-vertical-offset="2714">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/activity/ChooseAreaActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1681" max-vertical-offset="5750">
-          <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2973" max-vertical-offset="5911">
+          <caret line="227" column="54" selection-start-line="227" selection-start-column="54" selection-end-line="227" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1437#1445#0" expanded="true" />
@@ -1937,24 +1982,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/activity/WeatherActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2398" max-vertical-offset="3174">
-          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+        <state vertical-scroll-proportion="-2.30721" vertical-offset="2944" max-vertical-offset="3979">
+          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2920#3015#0" expanded="true" />
-            <element signature="e#3007#3008#0" expanded="true" />
-            <element signature="e#3099#3203#0" expanded="true" />
-            <element signature="e#3196#3197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/zhp/coolweather/util/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.531348" vertical-offset="1018" max-vertical-offset="3312">
-          <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3874#3969#0" expanded="true" />
+            <element signature="e#3961#3962#0" expanded="true" />
+            <element signature="e#4053#4157#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
           </folding>
         </state>
       </provider>
